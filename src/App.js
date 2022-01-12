@@ -32,7 +32,7 @@ function App() {
 	};
 
 	useEffect(() => {
-		Axios.get("http://localhost:5000/contacts").then((response) => {
+		Axios.get("https://web-contacts-app.herokuapp.com/contacts").then((response) => {
 			setContactList(response.data);
 		});
 	}, [showModal === false]);
@@ -63,7 +63,7 @@ function App() {
 	};
 
 	const handleContactCreate = () => {
-		Axios.post("http://localhost:5000/create", {
+		Axios.post("https://web-contacts-app.herokuapp.com/create", {
 			name: contactInfo.name,
 			address: contactInfo.address,
 			picture: contactInfo.picture,
@@ -78,7 +78,7 @@ function App() {
 	};
 
 	const handleContactUpdate = (id) => {
-		Axios.put(`http://localhost:5000/contact/${id}`, {
+		Axios.put(`https://web-contacts-app.herokuapp.com/contact/${id}`, {
 			name: contactInfo.name,
 			address: contactInfo.address,
 			picture: contactInfo.picture,
@@ -93,7 +93,7 @@ function App() {
 	};
 
 	const handleContactDelete = (id) => {
-		Axios.delete(`http://localhost:5000/delete/${id}`)
+		Axios.delete(`https://web-contacts-app.herokuapp.com/delete/${id}`)
 			.then(() => {
 				console.log("success");
 				closeModal();
