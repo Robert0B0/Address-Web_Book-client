@@ -1,0 +1,58 @@
+:root {
+  --border_color: rgb(0, 183, 255);
+  --accent_color: lightblue;
+  --hover_color: lightblue;
+}
+
+.searchContainer .searchInput input {
+  width: 250px;
+  height: 30px;
+  margin: 10px 10px 40px 30px;
+  padding: 5px 15px;
+  border: 3px solid var(--border_color);
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 300;
+  float: left;
+}
+
+.searchContainer input:focus {
+  outline: none;
+  border-color: var(--border_color);
+  background-color: var(--hover_color);
+}
+
+.searchContainer .control {
+  float: right;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.searchContainer .control button {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  color: var(--accent_color);
+  border: 3px solid var(--border_color);
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.searchContainer .control button:hover {
+  background-color: var(--hover_color);
+}
+
+.searchContainer .control .contactSum {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: var(--accent_color);
+  font-size: large;
+}
+/*# sourceMappingURL=SearchBar.css.map */

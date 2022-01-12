@@ -1,0 +1,171 @@
+:root {
+  --border_color: rgb(0, 183, 255);
+  --hover_color: lightblue;
+  --accent_color: rgb(0, 183, 255);
+  --background_color: white;
+  --error_accent: rgb(255, 0, 119);
+  --error_background: lightcoral;
+  --add_accent: lightblue;
+  --add_background: rgb(0, 183, 255);
+  --edit_accent: lightgreen;
+  --edit_background: rgb(0, 255, 157);
+  --delete_accent: lightcoral;
+  --delete_background: rgb(255, 0, 119);
+}
+
+.Modal {
+  width: 550px;
+  height: 320px;
+  margin: 10% auto auto auto;
+  background-color: var(--background_color);
+  border: 3px solid var(--border_color);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.Modal .titleBar {
+  height: 100px;
+  width: 500px;
+  margin-left: 30px;
+}
+
+.Modal .titleBar .title {
+  float: left;
+  color: var(--accent_color);
+}
+
+.Modal .titleBar .closeButton {
+  width: 50px;
+  height: 50px;
+  float: right;
+  color: var(--accent_color);
+  background-color: white;
+  border-color: var(--accent_color);
+  border-radius: 50%;
+  margin-right: 10px;
+  outline: none;
+}
+
+.Modal .titleBar .closeButton .closeIcon {
+  font-size: 30px;
+}
+
+.Modal .titleBar .closeButton:hover {
+  background-color: var(--hover_color);
+  color: white;
+  cursor: pointer;
+}
+
+.Modal .inputContainer {
+  height: 20px;
+}
+
+.Modal .inputContainer .inputs {
+  display: -ms-grid;
+  display: grid;
+  float: left;
+  margin-left: 50px;
+}
+
+.Modal .inputContainer .inputs input {
+  margin-top: 20px;
+  width: 250px;
+  height: 30px;
+  border: 2px solid var(--border_color);
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+.Modal .inputContainer .inputs input:focus {
+  outline: none;
+  border-color: var(--border_color);
+  background-color: var(--hover_color);
+  font-size: large;
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+.Modal .inputContainer .error {
+  border-color: var(--error_accent) !important;
+  background-color: var(--error_background) !important;
+}
+
+.Modal .inputContainer .inputImg {
+  float: right;
+  width: 120px;
+  margin-right: 50px;
+  border: 3px solid var(--accent_color);
+  border-radius: 50%;
+}
+
+.Modal .inputContainer .inputImg:hover {
+  cursor: pointer;
+  border: 3px solid var(--add_accent);
+}
+
+.Modal .addButton {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 20px;
+  background-color: white;
+  color: var(--accent_color);
+  border: 3px solid var(--accent_color);
+  border-radius: 50%;
+}
+
+.Modal .addButton .addIcon {
+  font-size: 50px;
+}
+
+.Modal .addButton:hover {
+  background-color: var(--add_background);
+  color: white;
+  cursor: pointer;
+}
+
+.Modal .editButton {
+  height: 80px;
+  width: 80px;
+  margin-left: 150px;
+  margin-top: 20px;
+  background-color: white;
+  color: var(--edit_accent);
+  border: 3px solid var(--edit_accent);
+  border-radius: 50%;
+}
+
+.Modal .editButton .editIcon {
+  font-size: 50px;
+}
+
+.Modal .editButton:hover {
+  background-color: var(--edit_background);
+  color: white;
+  cursor: pointer;
+}
+
+.Modal .deleteButton {
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: white;
+  color: var(--delete_accent);
+  border: 3px solid var(--delete_accent);
+  border-radius: 50%;
+}
+
+.Modal .deleteButton .deleteIcon {
+  font-size: 50px;
+}
+
+.Modal .deleteButton:hover {
+  background-color: var(--delete_background);
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Modal.css.map */
