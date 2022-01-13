@@ -38,7 +38,7 @@ function App() {
 		Axios.get("https://web-contacts-app.herokuapp.com/contacts").then((response) => {
 			setContactList(response.data);
 		});
-	}, []);
+	}, [showModal]);
 
 	const handleSearchInputChange = (e) => {
 		e.preventDefault();
