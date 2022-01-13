@@ -18,7 +18,7 @@ const headers = [
 
 function App() {
 	const [searchInput, setSearchInput] = useState("");
-	const [contactList, setContactList] = useState([tempDB]);
+	const [contactList, setContactList] = useState([]);
 	const [contactInfo, setContactInfo] = useState({
 		id: 0,
 		name: "",
