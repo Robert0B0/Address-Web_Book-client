@@ -7,11 +7,14 @@ import SearchBar from "./Components/SearchBar/SearchBar";
 import List from "./Components/List/List";
 import ContactModal from "./Components/ContactModal/ContactModal";
 import { FaFileCsv } from "react-icons/fa";
+import { tempDB } from "./tempDB.js";
 
 const headers = [
 	{ label: "Full Name", key: "name" },
 	{ label: "Address", key: "address" },
 ];
+
+
 
 function App() {
 	const [searchInput, setSearchInput] = useState("");
