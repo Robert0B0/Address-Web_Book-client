@@ -18,7 +18,7 @@ const headers = [
 
 function App() {
 	const [searchInput, setSearchInput] = useState("");
-	const [contactList, setContactList] = useState(tempDB);
+	const [contactList, setContactList] = useState([]);
 	const [contactInfo, setContactInfo] = useState({
 		id: 0,
 		name: "",
@@ -36,7 +36,7 @@ function App() {
 
 	useEffect(() => {
 		Axios.get("https://web-contacts-app.herokuapp.com/contacts").then((response) => {
-			setContactList([...contactList, ...response.data]);
+			setContactList(response.data);
 		});
 	}, [showModal === false]);
 
