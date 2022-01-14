@@ -7,8 +7,8 @@ the React component tree is as follow:<br/>
   &nbsp; - **Contact**  in form of a card showing name, address and picture<br/>
   &nbsp; - **Modal**  universal modal for Adding, Modifying and deleting Contacts<br/>
 
-the Backend Server is made with Node Express and mySql Database and is hosted on heroku with a ClearDB mySql database attached as resource
-The FrontEnd React is hosted on netlify
+the Backend Server is made with Node Express and PostGreSQL Database and is hosted on heroku with a heroku Postgres database attached as resource
+The React FrontEnd is hosted on netlify
 
 
 
