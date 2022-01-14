@@ -72,7 +72,6 @@ function App() {
 			picture: contactInfo.picture,
 		})
 			.then(() => {
-				console.log("success");
 				closeModal();
 			})
 			.catch((err) => {
@@ -87,7 +86,6 @@ function App() {
 			picture: contactInfo.picture,
 		})
 			.then(() => {
-				console.log("success");
 				closeModal();
 			})
 			.catch((err) => {
@@ -98,7 +96,6 @@ function App() {
 	const handleContactDelete = (id) => {
 		Axios.delete(`https://web-contacts-app.herokuapp.com/delete/${id}`)
 			.then(() => {
-				console.log("success");
 				closeModal();
 			})
 			.catch((err) => {
